@@ -7,7 +7,7 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 
-COPY Wallet_QSYVMD9J8GOANRS4 ./Wallet_QSYVMD9J8GOANRS4
+#COPY Wallet_QSYVMD9J8GOANRS4 ./Wallet_QSYVMD9J8GOANRS4
 
 COPY --from=build /app/target/*.jar app.jar
 
